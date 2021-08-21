@@ -215,13 +215,13 @@ def borrarexito_login():
         ventanamenu.config(bg="#213241")
         Label(ventanamenu,text="Menu de transacciones",font=("Cambria", 14),bg="#63A791",fg="black",width="500",height="2").pack()
         Label(ventanamenu,text="",bg="#213241",width="500",height="1").pack()
+        Label(ventanamenu,text="",bg="#213241",width="500",height="1").pack()
+        Label(ventanamenu,text="",bg="#213241",width="500",height="1").pack()
         Button(ventanamenu,text="Consulta de Saldo",font=("Cambria", 14),bg="#63A791",command=consultasaldo).pack()
         Label(ventanamenu,text="",bg="#213241",width="500",height="1").pack()
         Button(ventanamenu,text="Retirar dinero",font=("Cambria", 14),bg="#63A791",command=retirardinero).pack()
         Label(ventanamenu,text="",bg="#213241",width="500",height="1").pack()
         Button(ventanamenu,text="Ingresar dinero",font=("Cambria", 14),bg="#63A791",command=ingresardinero).pack()
-        Label(ventanamenu,text="",bg="#213241",width="500",height="1").pack()
-        Button(ventanamenu,text="Cambio de moneda",font=("Cambria", 14),bg="#63A791").pack()
         Label(ventanamenu,text="",bg="#213241",width="500",height="1").pack()
         Button(ventanamenu,text="Fondo de ahorro",font=("Cambria", 14),bg="#63A791").pack()
         Label(ventanamenu,text="",bg="#213241",width="500",height="1").pack()
@@ -297,13 +297,13 @@ def retirardinero():
         american_express_label = Label(ventanaretiro,image=american_express_photo)
         american_express_label.place(x=55,y=173)
         american_express_label.image = american_express_photo
-        Label(ventanaretiro,text="Retiro de dinero",font=("Cambria", 14),bg="#FF5733",fg="black",width="500",height="1").pack()
+        Label(ventanaretiro,text="Retiro de dinero",font=("Cambria", 14),bg="#63A791",fg="black",width="500",height="1").pack()
         Label(ventanaretiro,text="",bg="#213241",width="500",height="1").pack()
         dinero = IntVar()
         Entry(ventanaretiro,textvariable=dinero).pack()
         print(dinero.get())
         Label(ventanaretiro,text="",bg="#213241",width="500",height="1").pack()
-        Button(ventanaretiro,text="Retirar",font=("Cambria", 14),bg="#FF5733",command=lambda:[operacionretiro()]).pack()
+        Button(ventanaretiro,text="Retirar",font=("Cambria", 14),bg="#63A791",command=lambda:[operacionretiro()]).pack()
 
         def update_clock():
             time_now=time.strftime('%I:%M %p')
@@ -336,13 +336,13 @@ def ingresardinero():
         american_express_label = Label(ventanaingreso,image=american_express_photo)
         american_express_label.place(x=55,y=173)
         american_express_label.image = american_express_photo
-        Label(ventanaingreso,text="Ingreso de dinero",font=("Cambria", 14),bg="#FF5733",fg="black",width="500",height="1").pack()
+        Label(ventanaingreso,text="Ingreso de dinero",font=("Cambria", 14),bg="#63A791",fg="black",width="500",height="1").pack()
         Label(ventanaingreso,text="",bg="#213241",width="500",height="1").pack()
         dineroi = IntVar()
         Entry(ventanaingreso,textvariable=dineroi).pack()
         print(dineroi.get())
         Label(ventanaingreso,text="",bg="#213241",width="500",height="1").pack()
-        Button(ventanaingreso,text="Ingresar",font=("Cambria", 14),bg="#FF5733",command=lambda:[operacioningreso()]).pack()
+        Button(ventanaingreso,text="Ingresar",font=("Cambria", 14),bg="#63A791",command=lambda:[operacioningreso()]).pack()
     
         def update_clock():
             time_now=time.strftime('%I:%M %p')
